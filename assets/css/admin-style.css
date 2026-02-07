@@ -1,0 +1,162 @@
+/**
+ * Role Based Content Hider - Admin Styles
+ *
+ * @package RBContentHider
+ */
+
+/* ========================================
+   Settings Page
+   ======================================== */
+
+.rbch-settings-wrap {
+	max-width: 960px;
+}
+
+.rbch-tabs {
+	margin-bottom: 20px;
+}
+
+.rbch-tab-content {
+	background: #fff;
+	border: 1px solid #ccd0d4;
+	border-top: none;
+	padding: 20px;
+}
+
+/* ========================================
+   Overview Tab
+   ======================================== */
+
+.rbch-overview h2 {
+	margin-top: 20px;
+	padding-bottom: 8px;
+	border-bottom: 1px solid #e2e4e7;
+}
+
+.rbch-overview h2:first-child {
+	margin-top: 0;
+}
+
+.rbch-table {
+	margin-top: 10px;
+}
+
+.rbch-no-items {
+	color: #666;
+	font-style: italic;
+	padding: 10px 0;
+}
+
+/* ========================================
+   Guide Tab
+   ======================================== */
+
+.rbch-guide-section {
+	margin-bottom: 24px;
+	padding-bottom: 16px;
+	border-bottom: 1px solid #f0f0f0;
+}
+
+.rbch-guide-section:last-child {
+	border-bottom: none;
+}
+
+.rbch-guide-section h3 {
+	margin-top: 0;
+	color: #1d2327;
+}
+
+.rbch-guide-section code {
+	display: block;
+	background: #f6f7f7;
+	padding: 12px 16px;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	font-size: 13px;
+	word-wrap: break-word;
+	white-space: pre-wrap;
+}
+
+.rbch-roles-list {
+	columns: 2;
+	column-gap: 30px;
+}
+
+.rbch-roles-list li {
+	margin-bottom: 4px;
+	break-inside: avoid;
+}
+
+.rbch-roles-list code {
+	background: #f0f0f0;
+	padding: 2px 6px;
+	border-radius: 2px;
+}
+
+/* ========================================
+   Menu Item Fields
+   ======================================== */
+
+.rbch-menu-fieldset {
+	margin-top: 10px;
+	padding: 10px;
+	background: #f9f9f9;
+	border: 1px solid #e5e5e5;
+	border-radius: 3px;
+}
+
+.rbch-menu-fieldset legend {
+	padding: 0 4px;
+}
+
+.rbch-roles-checkboxes {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 4px 16px;
+	margin-top: 6px;
+}
+
+.rbch-role-label {
+	display: inline-flex;
+	align-items: center;
+	gap: 4px;
+	font-size: 12px;
+	white-space: nowrap;
+}
+
+/* ========================================
+   Widget Fields
+   ======================================== */
+
+.rbch-widget-visibility {
+	margin-top: 8px;
+	padding-top: 8px;
+	border-top: 1px solid #e5e5e5;
+}
+
+.rbch-widget-visibility p {
+	margin-bottom: 6px;
+}
+
+.rbch-widget-roles label {
+	font-size: 12px;
+}
+
+/* ========================================
+   Responsive
+   ======================================== */
+
+@media screen and (max-width: 782px) {
+	.rbch-roles-list {
+		columns: 1;
+	}
+
+	.rbch-roles-checkboxes {
+		flex-direction: column;
+		gap: 6px;
+	}
+
+	.rbch-tab-content {
+		padding: 12px;
+	}
+}

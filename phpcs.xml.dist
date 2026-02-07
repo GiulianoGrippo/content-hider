@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<ruleset name="RBContentHider">
+	<description>PHPCS ruleset for Role Based Content Hider plugin.</description>
+
+	<!-- Scan these files -->
+	<file>.</file>
+
+	<!-- Exclude vendor directory -->
+	<exclude-pattern>vendor/*</exclude-pattern>
+
+	<!-- Use WordPress coding standards -->
+	<rule ref="WordPress">
+		<!-- Exclude filename rules: we use PSR-4 autoloading -->
+		<exclude name="WordPress.Files.FileName.InvalidClassFileName"/>
+		<exclude name="WordPress.Files.FileName.NotHyphenatedLowercase"/>
+	</rule>
+
+	<!-- Text domain -->
+	<rule ref="WordPress.WP.I18n">
+		<properties>
+			<property name="text_domain" type="array">
+				<element value="rb-content-hider"/>
+			</property>
+		</properties>
+	</rule>
+
+	<!-- Minimum WP version -->
+	<config name="minimum_wp_version" value="5.8"/>
+
+	<!-- PHP extensions to check -->
+	<arg name="extensions" value="php"/>
+
+	<!-- Show colors -->
+	<arg name="colors"/>
+
+	<!-- Show progress -->
+	<arg value="ps"/>
+</ruleset>
